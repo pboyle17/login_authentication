@@ -62,7 +62,7 @@ post '/login' do
   user = Account.authenticate(params[:user_name],params[:password])
   if user
     session[:current_user]=user
-    @user_name=user 
+    @user_name=user
     redirect '/index'
   else
     @message = 'your password or account is incorrect'
@@ -81,4 +81,8 @@ end
 
 get '/index' do
   erb :index
+end
+
+get '/logout_successful' do
+  erb :logout_successful
 end
