@@ -1,0 +1,18 @@
+input {
+  font-size:2em;
+  display:block;
+  margin:10px auto;
+  width:33%;
+}
+.submit {
+  background:rgb(56, 42, 83);
+  border:0;
+  border-radius:5px;
+  color:gray;
+}
+
+body {
+  text-align:center;
+
+
+}
